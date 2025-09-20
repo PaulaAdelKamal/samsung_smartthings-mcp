@@ -48,11 +48,12 @@ Samsung SmartThings MCP Server is a Model Context Protocol (MCP) server that ena
 - Async operations for responsive performance
 - Built-in connection testing and diagnostics
 
+
 ## Prerequisites
 
 - Python 3.8 or higher
 - Samsung TV connected to SmartThings
-- SmartThings account with Personal Access Token
+- SmartThings account with Personal Access Token (this token should be updated every 24 hours)
 - Claude Desktop application
 
 ## Installation
@@ -125,7 +126,7 @@ Edit `%APPDATA%\Claude\claude_desktop_config.json`:
 {
   "mcpServers": {
     "smartthings": {
-      "command": "python",
+      "command": "C:\\path\\to\\smartthings-mcp-server/venv/Scripts/python.exe",
       "args": ["C:\\path\\to\\smartthings-mcp-server\\smartthings_mcp.py"],
       "env": {
         "SMARTTHINGS_ACCESS_TOKEN": "your_token_here"
@@ -258,10 +259,8 @@ smartthings-mcp-server/
 ├── smartthings_mcp.py      # Main MCP server
 ├── test_smartthings.py     # Connection test utility
 ├── requirements.txt        # Python dependencies
-├── setup.sh               # Quick setup script (Linux/macOS)
-├── setup.bat              # Quick setup script (Windows)
+├── Quick_setup.bat              # Quick setup script (Windows)
 ├── SETUP_GUIDE.md         # Detailed setup instructions
-├── LICENSE                # MIT License
 └── README.md              # This file
 ```
 
