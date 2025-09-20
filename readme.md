@@ -61,7 +61,7 @@ Samsung SmartThings MCP Server is a Model Context Protocol (MCP) server that ena
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/smartthings-mcp-server.git
+git clone https://github.com/PaulaAdelKamal/samsung_smartthings-mcp.git
 cd smartthings-mcp-server
 ```
 
